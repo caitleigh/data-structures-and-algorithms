@@ -75,7 +75,10 @@ Write a function named removeWithForEach that produces the same output as challe
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithForEach = (arr, callback) => {
-  // Solution code here...
+  arr.forEach(function(item, idx) {
+    callback(item, arr);
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -89,7 +92,12 @@ This anonymous function should accept up to three arguments: the element, the in
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithAnon = (arr) => {
-  // Solution code here...
+  arr.forEach( function(item, idx, arr) {
+    if (item % 3 ===2) {
+      arr.pop();
+    }
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -128,7 +136,20 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+  let newArr = [];
+  arr.forEach( function(item, idx) {
+    if(item % 3 === 0 && item % 5 ===0) {
+      newArr.push('Fizz Buzz')
+    } else if (item % 3 === 0) {
+      newArr.push('Fizz');
+    } else if (item % 5 === 0) {
+      newArr.push('Buzz');
+    } else {
+      newArr.push(item);
+    }
+  });
+
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
