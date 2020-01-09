@@ -30,9 +30,9 @@ CHALLENGE 3
 Write a function named sortByLength that takes in an array of strings and returns the same array, with the strings sorted by their length, lowest to highest.
 ------------------------------------------------------------------------------------------------ */
 
-const sortByLength = (arr) => {
-  // Solution code here...
-};
+const sortByLength = (arr) => arr.sort((a, b) => {
+    return a.length > b.length ? 1 : -1
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -42,9 +42,9 @@ Write a function named alphabetizeBetter that takes in an array of strings and r
 For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, and so is ['alphabet', 'Alphabet', 'carrot', 'Zebra'].
 ------------------------------------------------------------------------------------------------ */
 
-const alphabetizeBetter = (arr) => {
-  // Solution code here...
-};
+const alphabetizeBetter = (arr) => arr.sort((a,b) => {
+    return a.toLowerCase() > b.toLowerCase() ? 1 : -1
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -59,9 +59,9 @@ Here is an example of the input:
 ];
 ------------------------------------------------------------------------------------------------ */
 
-const sortByPrice = (arr) => {
-  // Solution code here...
-};
+const sortByPrice = (arr) => arr.sort((a , b) => {
+    return a.price > b.price ? 1:-1
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -71,9 +71,9 @@ Write a function named sortNumbersByLength that takes in an array of numbers and
 For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 ------------------------------------------------------------------------------------------------ */
 
-const sortNumbersByLength = (arr) => {
-  // Solution code here...
-};
+const sortNumbersByLength = (arr) => arr.sort((a,b)=> {
+    return a.toString().length > b.toString().length ? 1 : -1
+});
 
 /*-----------------------------------------------------------------------------------------------
 CHALLENGE 7
@@ -93,9 +93,9 @@ const people = [
   new Person('Stan', 'Seattle', 67),
 ];
 
-const sortPeople = (arr) => {
-  // Solution code here...
-};
+const sortPeople = (arr) => arr.sort((a,b) => {
+    return a.lastName > b.lastName ? 1:-1
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8
@@ -107,9 +107,12 @@ If two people share the same last name, alphabetize on their first name.
 If two people have the same full name, the younger one should come first. Do not worry about capitalization.
 ------------------------------------------------------------------------------------------------ */
 
-const sortPeopleBetter = (arr) => {
-  // Solution code here...
-};
+const sortPeopleBetter = (arr) => arr.sort((a,b) => {
+    return a.lastName > b.lastName ? 1
+        :a.firstName > b.firstName ? -1
+        :a.age > b.age ? 0
+        :2
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
@@ -133,9 +136,9 @@ const meetings = [
   new Meeting('Friday', '1200', '1345'),
 ];
 
-const sortMeetingsByDay = (arr) => {
-  // Solution code here...
-};
+const sortMeetingsByDay = (arr) => arr.sort((a , b) => {
+    return a.dayofWeek < b.dayofWeek ? 0 :1
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 10 - Stretch Goal
