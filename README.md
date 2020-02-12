@@ -2,8 +2,8 @@
 Author: Cait Rowland
 
 ## Table of Contents
-* [Reverse-Array] (./code-challenges/arrayReverse/arrayReverse.js);
-* [Shift Array] (./code-challenges/arrayShift/arrayShift.js);
+* [Reverse-Array] (../code-challenges/arrayReverse/arrayReverse.js);
+* [Shift Array] (../code-challenges/arrayShift/arrayShift.js);
 
 # Reverse an Array
 Code challenge to reverse array 
