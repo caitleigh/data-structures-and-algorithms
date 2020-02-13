@@ -2,8 +2,9 @@
 Author: Cait Rowland
 
 ## Table of Contents
-* [Reverse-Array] (./code-challenges/arrayReverse/arrayReverse.js);
-* [Shift Array] (./code-challenges/arrayShift/arrayShift.js);
+* [Reverse-Array](./code-challenges/arrayReverse/arrayReverse.js);
+* [Shift Array](./code-challenges/arrayShift.js);
+* [Array Binary Search](./code-challengs/arrayBinarySearch/array-binary-search.js)
 
 # Reverse an Array
 Code challenge to reverse array 
@@ -31,3 +32,19 @@ LGreat a function that looks at the length of the array and divids by 2 to find 
 ![401-code-challenge-2-whiteboard-1](./assets/arrayShift1.HEIC);
 ![401-code-challenge-2-whiteboard-2](./assets/arrayShift2.HEIC);
 ![401-code-challenge-2-whiteboard-3](./assets/arrayShift3.HEIC);
+
+# Array Binary Search
+Code challenge to return the index of an array's element that is equal to search key
+
+## Challenge
+Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
+
+## Approach & Efficiency
+
+
+## Solution
+![401-code-challenge-3-whiteboard-1](./assets/arrayBinarySearch1.HEIC);
+![401-code-challenge-3-whiteboard-2](./assets/arrayBinarySearch2.HEIC);
+[Code](./code-challengs/arrayBinarySearch/array-binary-search.js);
+
+
