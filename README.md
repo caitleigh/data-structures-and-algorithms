@@ -2,9 +2,14 @@
 Author: Cait Rowland
 
 ## Table of Contents
+
 * [Reverse-Array](./code-challenges/arrayReverse/arrayReverse.js);
 * [Shift Array](./code-challenges/arrayShift.js);
 * [Array Binary Search](./code-challengs/arrayBinarySearch/array-binary-search.js)
+
+* [Reverse Array](./code-challenges/arrayReverse/arrayReverse.js);
+* [Shift Array](./code-challenges/arrayShift/arrayShift.js);
+
 
 # Reverse an Array
 Code challenge to reverse array 
