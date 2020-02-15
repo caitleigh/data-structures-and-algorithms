@@ -39,12 +39,10 @@ class LinkedList {
             let string = '';
             let current = this.head
             while (current.next !== null) {
-                string = `${string} ${current.value} -->`;
+                string = `${string} {${current.value}} ->`;
                 current = current.next;
             }
          return `${string} null`;
         }
     }
 }
-
-  
