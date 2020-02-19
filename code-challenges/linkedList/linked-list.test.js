@@ -45,8 +45,45 @@ class LinkedList {
          return `${string} null`;
         }
     }
-}
 
+    append(value) {
+        let node = new Node(value, null);
+        if (!this.head) {
+          this.head = node;
+          return;
+        }
+        let current = this.head;
+        while (current.next != null) {
+          current = current.next
+        }
+        current.next = node;
+      }
+
+    insertBefore(value, newVal) {
+        let current = this.head;
+        while(current.next !== null) {
+          if(current.next.value == value){
+            let node = new Node(newVal)
+            node.next = current.next;
+            current.next = node
+            return
+          }
+          current = current.next
+        }
+    }
+
+    insertAfter(value, newVal) {
+        let current = this.head;
+        while(current.value !== null) {
+          if(current.value == value){
+            let node = new Node(newVal)
+            current.next = node;
+            return
+          }
+          current = current.next
+        }
+    }
+}
 ////Tests////
 
 jest.spyOn(global.console, 'log')
@@ -99,9 +136,12 @@ describe ('testing Linked List' , () => {
         }
         expect(list.toString()).toEqual(' {4} -> {3} -> {2} -> {1} -> null')
     })
-    
-    
-
+    // it('Can properly append value to end', () => {
+    //     let list = new LinkedList();
+    //     list.insert(1);
+    //     list.append(2);
+    //     expect(list.next).toEqual(2)
+    // })
 
 
 })
