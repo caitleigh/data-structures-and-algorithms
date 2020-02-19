@@ -6,6 +6,7 @@ Author: Cait Rowland
 * [Shift Array](./code-challenges/arrayShift.js);
 * [Array Binary Search](./code-challengs/arrayBinarySearch/array-binary-search.js)
 * [Linked Lists](./code-challenges/linkedList/linked-list.test.js)
+* [Linked List 2](./code-challenges/linkedList/linked-list.test.js)
 
 # Reverse an Array
 Code challenge to reverse array 
@@ -57,7 +58,7 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 Code challenge to create, insert, search and display linked list
 
 ## Challenge
-reate a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
+Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
 Within your LinkedList class, include a head property. Upon instantiation, an empty Linked List should be created.
 Define a method called insert which takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
 Define a method called includes which takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
@@ -65,6 +66,20 @@ Define a method called toString (or __str__ in Python) which takes in no argumen
 "{ a } -> { b } -> { c } -> NULL"
 Any exceptions or errors that come from your code should be semantic, capturable errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods you wrote for this lab.
 Be sure to follow your language/frameworks standard naming conventions (e.g. C# uses PascalCasing for all method and class names).
+
+## Approach & Efficiency
+
+
+## Solution
+[Code](./code-challenges/linkedList/linked-list.test.js)
+
+# Linked List 2
+Code challenge to append, insertBefore, and insertAfter to linked list
+
+## Challenge
+.append(value) which adds a new node with the given value to the end of the list
+.insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+.insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
 
 ## Approach & Efficiency
 
