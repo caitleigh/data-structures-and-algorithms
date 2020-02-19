@@ -61,21 +61,21 @@ class LinkedList {
 
     insertBefore(value, newVal) {
         let current = this.head;
-        while(current.next !== null) {
-          if(current.next.value == value){
-            let node = new Node(newVal)
-            node.next = current.next;
+        let node = new Node(newVal)
+        if (current.value === value) {
+            this.insert(newVal)
+        } else {
+            while (current.next && current.next.value !== value) {
+                current = current.next
+            }
             current.next = node
-            return
-          }
-          current = current.next
         }
     }
 
     insertAfter(value, newVal) {
         let current = this.head;
         while(current.value !== null) {
-          if(current.value == value){
+          if(current.value === value){
             let node = new Node(newVal)
             current.next = node;
             return
@@ -136,12 +136,58 @@ describe ('testing Linked List' , () => {
         }
         expect(list.toString()).toEqual(' {4} -> {3} -> {2} -> {1} -> null')
     })
-    // it('Can properly append value to end', () => {
-    //     let list = new LinkedList();
-    //     list.insert(1);
-    //     list.append(2);
-    //     expect(list.next).toEqual(2)
-    // })
 
+    it('Can successfully add a node to the end of the linked list', () => {
+        let list = new LinkedList();
+        list.insert(5);
+        list.insert(7);
+        list.append(12);
+        expect(list.head.next.next.value).toEqual(12);
+    })
+
+    it('Can successfully add multiple nodes to the end of a linked list', () => {
+        let list = new LinkedList();
+        list.append(5);
+        list.append(7);
+        list.append(12);
+        expect(list.head.value).toEqual(5);
+        expect(list.head.next.next.value).toEqual(12);
+    })
+
+    it('Can successfully insert a node before the first node of a linked list', () => {
+        let list = new LinkedList();
+        list.append(5);
+        list.append(7);
+        list.insertBefore(5, 12);
+        expect(list.head.value).toEqual(12);
+        expect(list.head.next.value).toEqual(5);
+    })
+
+    it('Can successfully insert after a node in the middle of the linked list', () => {
+        let list = new LinkedList();
+        list.append(5);
+        list.append(10)
+        list.append(7)
+        list.insertBefore(7, 12);
+        expect(list.head.value).toEqual(5);
+        expect(list.head.next.next.value).toEqual(12);
+    })
+
+    it('Can successfully insert a node after the last node of the linked list', () => {
+        let list = new LinkedList();
+        list.append(5);
+        list.append(7);
+        list.append(12)
+        list.insertAfter(12, 2);
+        expect(list.head.next.next.next.value).toEqual(2);
+      })
+      it('Can successfully insert after a node in the middle of the linked list', () => {
+        let list = new LinkedList();
+        list.append(5);
+        list.append(7);
+        list.append(12)
+        list.insertAfter(5, 2);
+        expect(list.head.next.value).toEqual(2);
+      })
 
 })
