@@ -83,7 +83,22 @@ class LinkedList {
           current = current.next
         }
     }
+
+    kthFromEnd(k) {
+        let current = this.head
+        const valArr = []
+        while(current !== null) {
+            valArr.unshift(current.value);
+            current = current.next
+        }
+        if(k < valArr.length) {
+            return valArr[k]
+        } else {
+            return 'exception'
+        }
+    }
 }
+
 ////Tests////
 
 jest.spyOn(global.console, 'log')
@@ -188,6 +203,46 @@ describe ('testing Linked List' , () => {
         list.append(12)
         list.insertAfter(5, 2);
         expect(list.head.next.value).toEqual(2);
+      })
+
+
+      it('“Happy Path” where k is not at the end, but somewhere in the middle of the linked list', () => {
+        let list = new LinkedList();
+        list.append(5)
+        list.append(7)
+        list.append(12)
+        expect(list.kthFromEnd(1)).toStrictEqual(7);
+      })
+
+      it('Where k is greater than the length of the linked list', () => {
+          let list = new LinkedList();
+          list.append(5)
+          list.append(7)
+          list.append(12)
+          expect(list.kthFromEnd(5)).toBeFalsy
+      })
+
+      it('Where k and the length of the list are the same', () => {
+        let list = new LinkedList();
+        list.append(5)
+        list.append(7)
+        list.append(12)
+        expect(list.kthFromEnd(3)).toBeFalsy
+        console.log(list.kthFromEnd(3))
+      })
+
+      it('Where k is not a positive integer', () => {
+        let list = new LinkedList();
+        list.append(5)
+        list.append(7)
+        list.append(12)
+        expect(list.kthFromEnd(-1)).toBeFalsy
+      })
+
+      it('Where the linked list is of a size 1', () => {
+        let list = new LinkedList();
+        list.append(5)
+        expect(list.kthFromEnd(1)).toBeFalsy
       })
 
 })

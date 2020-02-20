@@ -7,6 +7,7 @@ Author: Cait Rowland
 * [Array Binary Search](./code-challengs/arrayBinarySearch/array-binary-search.js)
 * [Linked Lists](./code-challenges/linkedList/linked-list.test.js)
 * [Linked List 2](./code-challenges/linkedList/linked-list.test.js)
+* [Linked List - kthFromTheEnd](./code-challenges/linkedList/linked-list.test.js)
 
 # Reverse an Array
 Code challenge to reverse array 
@@ -87,4 +88,16 @@ Code challenge to append, insertBefore, and insertAfter to linked list
 ## Solution
 [Code](./code-challenges/linkedList/linked-list.test.js)
 
+# Linked List - kthFromTheENd
+Code challenge to find the kth from the end of the linked list
+
+## Challenge
+Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+## Approach & Efficiency
+
+
+
+## Solution
+[Code](./code-challenges/linkedList/linked-list.test.js)
 
