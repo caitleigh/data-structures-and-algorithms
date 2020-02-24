@@ -129,3 +129,18 @@ Worked one method add a time utilizing TDD. Stored the values of each node in an
 ## Solution
 [Code](./code-challenges/stacksAndQueues/stacks-and-queues.test.js)
 
+## API 
+Methods available 
+### Stacks 
+* Create a new Stack
+* Push - adds a new node to the front of a Stack
+* Pop - removes a node from the front of a Stack
+* Peek - returns the front value without changing the Stack
+* isEmpty - returns boolean based on if Stack is empty or not
+
+### Queues 
+* Creates a new Queue
+* Enqueue - adds a new node to end of a Queue 
+* Dequeue - removes a node from the front of the Queue
+* Peek - returns the value at the front of Queue without changing the Queue 
+* isEmpty - return a boolean based on if Queue is empty or not
