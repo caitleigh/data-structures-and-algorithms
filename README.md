@@ -2,6 +2,7 @@
 Author: Cait Rowland
 
 ## Table of Contents
+
 * [Reverse-Array](#Reverse-an-array);
 * [Shift Array](#shift-array);
 * [Array Binary Search](#Array-Binary-Search)
@@ -9,6 +10,7 @@ Author: Cait Rowland
 * [Linked List 2](#Linked-List-2)
 * [Linked List - kthFromTheEnd](#kthFromTheEnd)
 * [Implementation: Stacks and Queues](#Stacks-And-Queues-Implementation)
+
 
 # Reverse an Array
 Code challenge to reverse array 
