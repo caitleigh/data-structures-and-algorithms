@@ -2,12 +2,13 @@
 Author: Cait Rowland
 
 ## Table of Contents
-* [Reverse-Array](./code-challenges/arrayReverse/arrayReverse.js);
-* [Shift Array](./code-challenges/arrayShift.js);
-* [Array Binary Search](./code-challengs/arrayBinarySearch/array-binary-search.js)
-* [Linked Lists](./code-challenges/linkedList/linked-list.test.js)
-* [Linked List 2](./code-challenges/linkedList/linked-list.test.js)
-* [Linked List - kthFromTheEnd](./code-challenges/linkedList/linked-list.test.js)
+* [Reverse-Array](#Reverse-an-array);
+* [Shift Array](#shift-array);
+* [Array Binary Search](#Array-Binary-Search)
+* [Linked Lists](#Linked-List )
+* [Linked List 2](#Linked-List-2)
+* [Linked List - kthFromTheEnd](#kthFromTheEnd)
+* [Implementation: Stacks and Queues](#Stacks-And-Queues-Implementation)
 
 # Reverse an Array
 Code challenge to reverse array 
@@ -55,7 +56,7 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 ![401-code-challenge-2-whiteboard-2](./assets/arrayShift2.HEIC);
 ![401-code-challenge-2-whiteboard-3](./assets/arrayShift3.HEIC);
 
-# Linked LIst 
+# Linked List 
 Code challenge to create, insert, search and display linked list
 
 ## Challenge
@@ -88,7 +89,7 @@ Code challenge to append, insertBefore, and insertAfter to linked list
 ## Solution
 [Code](./code-challenges/linkedList/linked-list.test.js)
 
-# Linked List - kthFromTheENd
+# kthFromTheEnd
 Code challenge to find the kth from the end of the linked list
 
 ## Challenge
@@ -96,8 +97,35 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 
 ## Approach & Efficiency
 
+## Solution
+[Code](./code-challenges/linkedList/linked-list.test.js)
+
+
+# Stacks And Queues Implementation 
+Code challenge to implement stack and queues methods with linked lists
+
+## Challenge
+- Create a Node class that has properties for the value stored in the Node, and a pointer to the next node.
+- Create a Stack class that has a top property. It creates an empty Stack when instantiated.
+* This object should be aware of a default empty value assigned to top when the stack is created.
+* Define a method called push which takes any value as an argument and adds a new node with that value to the top of the stack with an O(1) Time performance.
+* Define a method called pop that does not take any argument, removes the node from the top of the stack, and returns the node’s value.
+* Define a method called peek that does not take an argument and returns the value of the node located on top of the stack, without removing it from the stack.
+* Define a method called isEmpty that does not take an argument, and returns a boolean indicating whether or not the stack is empty.
+- Create a Queue class that has a front property. It creates an empty Queue when instantiated.
+* This object should be aware of a default empty value assigned to front when the queue is created.
+* Define a method called enqueue which takes any value as an argument and adds a new node with that value to the back of the queue with an O(1) Time performance.
+* Define a method called dequeue that does not take any argument, removes the node from the front of the queue, and returns the node’s value.
+* Define a method called peek that does not take an argument and returns the value of the node located in the front of the queue, without removing it from the queue.
+* Define a method called isEmpty that does not take an argument, and returns a boolean indicating whether or not the queue is empty.
+- Any exceptions or errors that come from your code should be semantic, capturable errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods you wrote for this lab.
+- Be sure to follow your languages best practices for naming conventions.
+You have access to the Node class and all the properties on the Linked List class.
+
+## Approach & Efficiency
+Worked one method add a time utilizing TDD. Stored the values of each node in an array to easily find the values of each node and manipulate the stacks and queues 
 
 
 ## Solution
-[Code](./code-challenges/linkedList/linked-list.test.js)
+[Code](./code-challenges/stacksAndQueues/stacks-and-queues.test.js)
 
