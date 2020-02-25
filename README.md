@@ -10,6 +10,7 @@ Author: Cait Rowland
 * [Linked List 2](#Linked-List-2)
 * [Linked List - kthFromTheEnd](#kthFromTheEnd)
 * [Implementation: Stacks and Queues](#Stacks-And-Queues-Implementation)
+* [Queue with Stacks](#Queue-with-Stacks)
 
 
 # Reverse an Array
@@ -146,3 +147,17 @@ Methods available
 * Dequeue - removes a node from the front of the Queue
 * Peek - returns the value at the front of Queue without changing the Queue 
 * isEmpty - return a boolean based on if Queue is empty or not
+
+# Queue with Stacks
+Code challenge to implement stack and queues methods with linked lists
+
+## Challenge
+Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:
+
+## Approach & Efficiency
+
+
+## Solution
+[Code](./code-challenges/queueWithStacks/queue-with-stacks.test.js)
+
+## API 
