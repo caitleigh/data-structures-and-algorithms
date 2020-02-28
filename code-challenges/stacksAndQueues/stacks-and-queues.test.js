@@ -15,7 +15,7 @@ class Stack {
     }
 
     push(value){
-        let node = new Node(value)
+        let node = new Node(value, null)
         return this.storage.unshift((node).value)
     }
 

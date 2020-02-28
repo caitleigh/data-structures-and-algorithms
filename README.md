@@ -10,6 +10,8 @@ Author: Cait Rowland
 * [Linked List 2](#Linked-List-2)
 * [Linked List - kthFromTheEnd](#kthFromTheEnd)
 * [Implementation: Stacks and Queues](#Stacks-And-Queues-Implementation)
+* [Queue with Stacks](#Queue-with-Stacks)
+* [Binary Tree](#Trees)
 
 
 # Reverse an Array
@@ -146,3 +148,44 @@ Methods available
 * Dequeue - removes a node from the front of the Queue
 * Peek - returns the value at the front of Queue without changing the Queue 
 * isEmpty - return a boolean based on if Queue is empty or not
+
+# Queue with Stacks
+Code challenge to implement stack and queues methods with linked lists
+
+## Challenge
+Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:
+
+## Approach & Efficiency
+
+
+## Solution
+[Code](./code-challenges/queueWithStacks/queue-with-stacks.test.js)
+
+## API 
+
+# Trees
+Code Challenge to great a binary tree and complete depth first traversals
+
+## Challenge
+* Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
+* Create a BinaryTree class
+- Define a method for each of the depth first traversals called preOrder, inOrder, and postOrder which returns an array of the values, ordered appropriately.
+* Any exceptions or errors that come from your code should be semantic, capturable errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods you wrote for this lab.
+
+## Approach & Efficiency
+To create a binary tree that takes in a value and as additional values are added, check to see if it is greater than or less than the parent node and insert to the left or the the right based on the value. 
+
+Pre order pushes each node value into an array as you work your way down the tree starting on the left and then the right 
+
+In order, pushes the node value into a storage array as you work your way down the left and then the right 
+
+Post order, traverses all the way to the left and then pushes values on its way back up and then does the same thing for the right side 
+
+## API
+Methods vailable: 
+* Node class for trees
+* Binary Tree class
+- Inserts new node
+- preOrder traversal 
+- inOrder traversal 
+_ postOrder traversal 
