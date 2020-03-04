@@ -85,6 +85,21 @@ class BinaryTree {
 
         return visited;
     }
+
+    findMaxValue() {
+        let output = 0
+        if(this.root === null) return null
+        output = this.root.value
+        function traverse (node) {
+            if(node.left) traverse(node.left)
+            if(node.right) traverse (node.right)
+            if(node.value > output) {
+                output = node.value
+            }
+        }
+        traverse (this.root)
+        return output
+    }
 }
 
 module.exports = {Node, BinaryTree}
