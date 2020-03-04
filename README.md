@@ -201,6 +201,9 @@ Write a breadth first traversal method which takes a Binary Tree as its unique i
 ## Approach & Efficiency
 Breadth first will need to go through each level before moving to the next level so initate 2 arrays, one to keep track of our 'todo' list to visit and one to keep track of what was actually visted. While there is something in the queue, the code will move on to check if there is a right child and a left child and push those values to th queue. Once it looks at the children then it will move on to take those values off of the queue and move them to visited until the whole tree as been traversed and nothing is left in the queue. Then it will return 
 
+## Solution 
+[Code](./code-challenges/tree/tree.js)
+
 ## API
 **Built off of Tree code challenge and classes** 
 Methods vailable: 
@@ -220,6 +223,9 @@ Write an instance method called find-maximum-value. Without utilizing any of the
 
 ## Approach & Efficiency
 traverse through tree checking if node value is greater than current output. If it is, replace current value. 
+
+## Solution 
+[Code](./code-challenges/tree/tree.js)
 
 ## API
 **Built off of Tree code challenge and classes** 
