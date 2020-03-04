@@ -69,6 +69,22 @@ class BinaryTree {
         traverse(this.root)
         return data;
     }
+
+    breadthFirst(){
+        let queue = []
+        let visited = []
+        let node = this.root
+        queue.push(node)
+        if(this.root === null ) return null
+        while (queue.length) {
+            node = queue.shift()
+            visited.push(node.value)
+            if(node.left) queue.push(node.left)
+            if(node.right) queue.push(node.right)
+        }
+
+        return visited;
+    }
 }
 
 module.exports = {Node, BinaryTree}

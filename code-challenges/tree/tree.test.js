@@ -8,11 +8,9 @@ tree.insert(20)
 tree.insert(9)
 tree.insert(7)
 
-console.log(tree)
-
 describe ('Create a tree', () => {
     it('Can successfully instantiate an empty tree', () => {
-        expect(new BinaryTree).toEqual({root: null})
+        expect(new BinaryTree()).toEqual({root: null})
     })
     it('Can successfully instantiate a tree with a single root node', () => {
         const tree = new BinaryTree()
@@ -45,5 +43,15 @@ describe('In Order', () => {
 describe('Post Order', () => {
     it('Can successfully return a collection from a postorder traversal', () => {
         expect(tree.postOrder()).toEqual([7, 9, 5, 20, 13])
+    })
+})
+
+describe('Breadth first', () => {
+    it('can successfully return a collection from a breadth first traversal', () => {
+        expect(tree.breadthFirst()).toEqual([13, 5, 20, 9, 7])
+    })
+    it('returns null tree', () => {
+        let testTree = new BinaryTree();
+        expect(testTree.breadthFirst()).toEqual(null) 
     })
 })
