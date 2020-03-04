@@ -12,6 +12,8 @@ Author: Cait Rowland
 * [Implementation: Stacks and Queues](#Stacks-And-Queues-Implementation)
 * [Queue with Stacks](#Queue-with-Stacks)
 * [Binary Tree](#Trees)
+* [BreadthFirst](#Breadth-First)
+* [Find Max Value](#Find-Max-Value)
 
 
 # Reverse an Array
@@ -189,3 +191,44 @@ Methods vailable:
 - preOrder traversal 
 - inOrder traversal 
 _ postOrder traversal 
+
+# Breadth First
+Code Challenge to great a binary tree and complete depth first traversals
+
+## Challenge
+Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+## Approach & Efficiency
+Breadth first will need to go through each level before moving to the next level so initate 2 arrays, one to keep track of our 'todo' list to visit and one to keep track of what was actually visted. While there is something in the queue, the code will move on to check if there is a right child and a left child and push those values to th queue. Once it looks at the children then it will move on to take those values off of the queue and move them to visited until the whole tree as been traversed and nothing is left in the queue. Then it will return 
+
+## API
+**Built off of Tree code challenge and classes** 
+Methods vailable: 
+* Node class for trees
+* Binary Tree class
+- Inserts new node
+- preOrder traversal 
+- inOrder traversal 
+_ postOrder traversal 
+- breadthFirs traversal 
+
+# Find Max Value
+Code Challenge to find the maximum value in a Binary Tree
+
+## Challenge
+Write an instance method called find-maximum-value. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+## Approach & Efficiency
+traverse through tree checking if node value is greater than current output. If it is, replace current value. 
+
+## API
+**Built off of Tree code challenge and classes** 
+Methods vailable: 
+* Node class for trees
+* Binary Tree class
+- Inserts new node
+- preOrder traversal 
+- inOrder traversal 
+_ postOrder traversal 
+- breadthFirst traversal 
+_ findMaxValue
