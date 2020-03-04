@@ -49,9 +49,19 @@ describe('Post Order', () => {
 describe('Breadth first', () => {
     it('can successfully return a collection from a breadth first traversal', () => {
         expect(tree.breadthFirst()).toEqual([13, 5, 20, 9, 7])
-    })
+    }) 
     it('returns null tree', () => {
         let testTree = new BinaryTree();
         expect(testTree.breadthFirst()).toEqual(null) 
+    })
+})
+
+describe('Max value', () => {
+    it('can successfully return the maxium value of a node in the tree', () => {
+        expect(tree.findMaxValue()).toEqual(20)
+    })
+    it('returns null if tree is null' , () => {
+        let testTree = new BinaryTree()
+        expect(testTree.findMaxValue()).toEqual(null)
     })
 })
