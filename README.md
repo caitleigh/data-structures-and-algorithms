@@ -14,6 +14,7 @@ Author: Cait Rowland
 * [Binary Tree](#Trees)
 * [BreadthFirst](#Breadth-First)
 * [Find Max Value](#Find-Max-Value)
+* [Insertion Sort](#Insertion-Sort)
 
 
 # Reverse an Array
@@ -238,3 +239,17 @@ Methods vailable:
 _ postOrder traversal 
 - breadthFirst traversal 
 _ findMaxValue
+
+# Insertion Sort
+Code challenge to sort an array
+
+## Challenge
+Walk through pseudo code with test array and then produce working code and test 
+
+## Approach & Efficiency
+[Blog](./code-challenges/sorting/insertion-sort/insertionSortBlog.md)
+## Solution 
+[Code](./code-challenges/sorting/insertion-sort/insertionSort.js)
+[Test](./code-challenges/sorting/insertion-sort/insertionSort.test.js)
+
+
