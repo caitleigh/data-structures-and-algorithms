@@ -15,6 +15,7 @@ Author: Cait Rowland
 * [BreadthFirst](#Breadth-First)
 * [Find Max Value](#Find-Max-Value)
 * [Insertion Sort](#Insertion-Sort)
+* [Repeat Word](#Repeat-Word)
 
 
 # Reverse an Array
@@ -251,5 +252,19 @@ Walk through pseudo code with test array and then produce working code and test
 ## Solution 
 [Code](./code-challenges/sorting/insertion-sort/insertionSort.js)
 [Test](./code-challenges/sorting/insertion-sort/insertionSort.test.js)
+
+# Repeat Word
+Code Challenge check for first repeated word in a string and return that word
+
+## Challenge
+Write a function that accepts a lengthy string parameter.
+
+Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
+
+## Approach & Efficiency
+ My apprach was to first remove all special characters in string, if any and changed all charactes to lower case then split the string into an array of each words. Then I created a new map object. I then iterated over the array and checked to see if the map has that value in it. If not then it would add the arr[i] to the map. If arr[i] is in the map object then return arr[i]. It will also return null if the string is empty and will return 'no repeated words' if no words repeat. 
+
+## Solution 
+[Code](./code-challenges/repeatedWord/repeatedWord.test.js)
 
 
