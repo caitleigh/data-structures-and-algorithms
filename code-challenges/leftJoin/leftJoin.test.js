@@ -9,6 +9,23 @@ const leftJoin = (hashMap1, hashMap2) => {
     return output
 }
 
+///without using .push 
+const leftJoin = (hashMap1, hashMap2) => {
+    let output = []
+    let i = 0
+    for (let [key, value] of hashMap1) {
+      if(hashMap2.has(key)) {
+          output[i] = ([key,value, hashMap2.get(key)])
+          i++
+      }
+    else {
+        output[i] = ([key, value, null])
+        i++
+    }
+    } 
+    return output
+}
+
 
 //// tests 
 
