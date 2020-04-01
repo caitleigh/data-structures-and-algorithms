@@ -17,6 +17,7 @@ Author: Cait Rowland
 * [Insertion Sort](#Insertion-Sort)
 * [Repeat Word](#Repeat-Word)
 * [Hashmap Left Join](#Left-Join)
+* [Graph](#Graph)
 
 
 # Reverse an Array
@@ -293,5 +294,23 @@ once you've gone through the whole first map, return the output as a 2d array.
 
 ## Solution 
 [Code](./code-challenges/leftJoin/leftJoin.test.js)
+
+# Graph
+Code Challenge for a weighted graph + adjacency list 
+
+## Challenge
+Implement your own Graph. The graph should be represented as an adjacency list, and should include the following methods:
+addNode() - adds node to graph
+addEdge() - adds edge weith weight to graph 
+getNodes() - returns list 
+getNeightbors() - returns the neighbors and weights for a given node 
+size() - returns the total number of nodes in graph  
+
+## Approach & Efficiency
+
+
+## Solution 
+[Code](./code-challenges/graph/graph.test.js)
+
 
 
