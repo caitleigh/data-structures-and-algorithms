@@ -15,6 +15,8 @@ Author: Cait Rowland
 * [BreadthFirst](#Breadth-First)
 * [Find Max Value](#Find-Max-Value)
 * [Insertion Sort](#Insertion-Sort)
+* [Repeat Word](#Repeat-Word)
+* [Hashmap Left Join](#Left-Join)
 
 
 # Reverse an Array
@@ -251,5 +253,45 @@ Walk through pseudo code with test array and then produce working code and test
 ## Solution 
 [Code](./code-challenges/sorting/insertion-sort/insertionSort.js)
 [Test](./code-challenges/sorting/insertion-sort/insertionSort.test.js)
+
+# Repeat Word
+Code Challenge check for first repeated word in a string and return that word
+
+## Challenge
+Write a function that accepts a lengthy string parameter.
+
+Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
+
+## Approach & Efficiency
+ My apprach was to first remove all special characters in string, if any and changed all charactes to lower case then split the string into an array of each words. Then I created a new map object. I then iterated over the array and checked to see if the map has that value in it. If not then it would add the arr[i] to the map. If arr[i] is in the map object then return arr[i]. It will also return null if the string is empty and will return 'no repeated words' if no words repeat. 
+
+## Solution 
+[Code](./code-challenges/repeatedWord/repeatedWord.test.js)
+
+# Left Join
+Code Challenge to join two hashmaps 
+
+## Challenge
+Write a function that LEFT JOINs two hashmaps into a single data structure.
+
+The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+
+The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+
+Combine the key and corresponding values (if they exist) into a new data structure according to LEFT JOIN logic.
+
+LEFT JOIN means all the values in the first hashmap are returned, and if values exist in the “right” hashmap, they are appended to the result row. If no values exist in the right hashmap, then some flavor of NULL should be appended to the result row.
+
+The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic.
+
+Avoid utilizing any of the library methods available to your language.
+
+## Approach & Efficiency
+
+First loop through the first map and look at the keys and values, then if map2 has the the same key, push the key and value from the first map and the value for the matching key in the second map into an output array. If that key does not exist then push the key/value pair from the first map and null as the third value. 
+once you've gone through the whole first map, return the output as a 2d array. 
+
+## Solution 
+[Code](./code-challenges/leftJoin/leftJoin.test.js)
 
 
